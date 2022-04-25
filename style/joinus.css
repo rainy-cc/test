@@ -1,0 +1,239 @@
+@import 'reset.css';
+html {
+  overflow-x: hidden;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #000;
+  color: #67583F;
+}
+.header .hd-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1340px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .hd-container .nav-btn {
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header .hd-container .nav-btn__show .line {
+  transform: scale(1) !important;
+}
+.header .hd-container .nav-btn .line {
+  width: 65%;
+  height: 1px;
+  background: #fff;
+  transform: scale(0, 1);
+  transition: 222ms;
+}
+.header .hd-container .nav-btn .line-short {
+  margin-top: 12px;
+  width: 35%;
+}
+.header .hd-logo {
+  width: 146px;
+  height: 30px;
+}
+.header .hd-navbar {
+  width: 678px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 222ms;
+}
+.header .hd-navbar__hide {
+  opacity: 0;
+}
+.header .hd-menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.header .hd-menus a.menu-item {
+  cursor: pointer;
+  line-height: 25px;
+  transition: 0.2s;
+  color: #67583F;
+}
+.header .hd-menus a.menu-item + .menu-item {
+  margin-left: 60px;
+}
+.header .hd-menus a.menu-item:hover {
+  color: #BEA67C;
+}
+.header .hd-menus a.menu-item__active {
+  color: #BEA67C;
+}
+.header .hd-divider {
+  margin: 0 40px;
+  width: 1px;
+  height: 20px;
+  background-color: #BEA67C;
+}
+.header .hd-language {
+  position: relative;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .hd-language__text {
+  display: inline-block;
+  line-height: 25px;
+  border-bottom: 1px solid #67583F;
+}
+.header .hd-language:hover .hd-dropdown {
+  display: block;
+}
+.header .hd-language .hd-dropdown {
+  display: none;
+  position: absolute;
+  left: -60px;
+  top: 90px;
+  width: 195px;
+  color: #BEA67C;
+}
+.header .hd-language .hd-dropdown__item {
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
+  background: #101010;
+}
+.header .hd-language .hd-dropdown__item:hover {
+  background: #000;
+}
+.header .hd-language .hd-dropdown__item__active {
+  background: #000;
+}
+.mainbg {
+  background-image: url(../imgs/joinus.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: #BEA67C;
+}
+.mainbg .main {
+  width: 1340px;
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 66px;
+}
+.tabs {
+  display: flex;
+  margin-bottom: 160px;
+  color: #fff;
+}
+.tabs .tab {
+  line-height: 42px;
+  padding-bottom: 12px;
+  font-size: 30px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.tabs .tab-active {
+  font-weight: 500;
+  border-bottom: 4px solid #BEA67C;
+}
+.tabs .tab + .tab {
+  margin-left: 60px;
+}
+.lookingfor {
+  margin-bottom: 100px;
+  font-size: 36px;
+  line-height: 50px;
+}
+.lookingfor .title {
+  margin-bottom: 20px;
+  font-size: 80px;
+  line-height: 110px;
+}
+.lookingfor .text {
+  font-size: 28px;
+}
+.jobs .row {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #505050;
+}
+.jobs .job-item {
+  width: 580px;
+}
+.jobs .job-item .position {
+  margin: 0;
+  position: relative;
+  height: 56px;
+  line-height: 56px;
+  font-size: 40px;
+  padding-left: 42px;
+  color: #FFECCB;
+}
+.jobs .job-item .position::before {
+  display: block;
+  content: '';
+  width: 6px;
+  height: 36px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: #FFECCB;
+}
+.jobs .job-item .tip {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  height: 33px;
+  line-height: 33px;
+  font-size: 24px;
+}
+.jobs .job-item .duties {
+  line-height: 46px;
+  font-size: 18px;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-container .btn {
+  margin: 0 40px;
+  box-sizing: border-box;
+  width: 232px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 24px;
+  border-radius: 36px;
+  color: #BEA67C;
+  text-align: center;
+  border: 1px solid #322A1C;
+  font-weight: 400;
+  cursor: pointer;
+}
+.btn-container .btn-disabled {
+  color: #322A1C;
+}
+.welfare {
+  display: block;
+  margin-top: 159px;
+  width: 100%;
+  height: 607px;
+}

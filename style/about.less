@@ -1,0 +1,80 @@
+
+@import './reset.css';
+@import './commonHeader.less';
+
+.mainbg {
+    .main {
+        width: 1340px;
+        padding: 200px 0 72px;
+        margin: 0 auto;
+        color: #333;
+    }
+}
+
+.introduction {
+    .pic {
+        width: 569px;
+        height: 242px;
+        margin-left: -65px;
+        margin-bottom: 80px;
+    }
+
+    .desc {
+        font-size: 26px;
+        line-height: 50px;
+        & + .desc {
+            margin-top: 40px;
+        }
+    }
+}
+
+.milestone {
+    margin-top: 160px;
+    font-size: 26px;
+    line-height: 50px;
+    .pic {
+        width: 507px;
+        height: 154px;
+    }
+
+    .history {
+        margin-top: 80px;
+        margin-bottom: 160px;
+        position: relative;
+        height: 831px;
+        padding-top: 14px;
+        box-sizing: border-box;
+        .linebg {
+            position: absolute;
+            top: 0;
+            left: 130px;
+            width: 30px;
+            height: 831px;
+            background: url(../imgs/line.png) no-repeat;
+        }
+        .item {
+            display: flex;
+            margin: 0;
+            font-size: 0;
+            &+.item {
+                margin-top: 100px;
+            }
+            span {
+                font-size: 26px;
+                &.year {
+                    margin-right: 155px;
+                }
+                &.event {
+                    flex: 1
+                }
+            }
+            
+        }
+    }
+}
+
+.partner {
+    display: block;
+    width: 100%;
+    height: auto;
+}

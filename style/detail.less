@@ -1,0 +1,96 @@
+@import './reset.css';
+@import './commonHeader.less';
+
+.mainbg {
+    background-color: #000;
+    background-image: url(../imgs/productBg.png);
+    background-size: 100% auto;
+    color: #333;
+}
+
+.article {
+    width: 1340px;
+    padding: 110px 0 80px;
+    margin: 0 auto;
+    color: #333333;
+    .article-header {
+        box-sizing: border-box;
+        padding-left: 32px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 360px;
+            left: 0;
+            top: 50%;
+            margin-top: -180px;
+            background: #C2A676;
+        }
+        .title {
+            margin: 0;
+            margin-bottom: 40px;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 84px;
+        }
+
+        p {
+            margin: 0;
+            & + p {
+                margin-top: 4px;
+            }
+        }
+
+        .year {
+            height: 47px;
+            font-size: 40px;
+            font-family: DINAlternate-Bold, DINAlternate;
+            font-weight: bold;
+            line-height: 47px;
+            letter-spacing: 2px;
+        }
+
+        .date {
+            font-size: 60px;
+            font-family: DINAlternate-Bold, DINAlternate;
+            font-weight: bold;
+            line-height: 70px;
+            letter-spacing: 3px;
+        }
+
+        .time {
+            height: 47px;
+            font-size: 40px;
+            font-family: DINAlternate-Bold, DINAlternate;
+            font-weight: bold;
+            line-height: 47px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .content {
+        margin-top: 100px;
+        line-height: 46px;
+        font-size: 18px;
+        .img {
+            display: block;
+            width: 100%;
+        }
+  
+    }
+    .more {
+        margin-top: 82px;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        line-height: 60px;
+        font-weight: 500;
+        font-size: 40px;
+        color: #333;
+        .icon-more {
+            height: 60px;
+            width: 60px;
+        }
+    }
+}
